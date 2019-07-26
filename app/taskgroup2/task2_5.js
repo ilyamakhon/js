@@ -14,4 +14,4 @@ function sum(a) {
     return f;
 }
 
-console.log( parseInt(sum(1)(2)(3)(6)) );
+console.log( parseInt(sum(1)(2)(3)(6)(2)(101000)) );
