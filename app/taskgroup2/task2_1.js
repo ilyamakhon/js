@@ -12,11 +12,11 @@ function isOdd(num1, num2) {
     const isOdd2 = num2 % 2 === 0;
     const isOdd1 = num1 % 2 === 0;
 
-    if(isOdd2 && num1 % 2 !== 0) {
+    if (isOdd2 && num1 % 2 !== 0) {
         return num1;
     }
 
-    if(isOdd1 && num2 % 2 !== 0) {
+    if (isOdd1 && num2 % 2 !== 0) {
         return num2;
     }
 

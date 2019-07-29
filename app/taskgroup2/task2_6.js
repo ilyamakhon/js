@@ -10,6 +10,6 @@ const bind = function (fn, context) {
     };
 };
 
-const bindedSum = bind(sum,{sum: 100});
+const bindedSum = bind(sum, {sum: 100});
 
 console.log(bindedSum(10, 25));

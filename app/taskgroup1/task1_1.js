@@ -1,12 +1,12 @@
 export default function task1_1() {
     const el = document.getElementById('task1_1');
     el.addEventListener('click', () => {
-       doTask1_1();
+        doTask1_1();
     });
 }
 
 function doTask1_1() {
-    while(true) {
+    while (true) {
         const num1 = parseFloat(prompt('enter number 1'));
         const num2 = parseFloat(prompt('enter number 2'));
 
@@ -28,7 +28,7 @@ function isNumbers(num1, num2) {
     if (isNaN(num1)) {
         alert('first number is not numeric');
         return 1;
-    } else if(isNaN(num2)) {
+    } else if (isNaN(num2)) {
         alert('second number is not numeric');
         return 1;
     }

@@ -15,5 +15,5 @@ function task2_4_2(...args) {
     }
 }
 
-let decorator2 = task2_4_2('asd', 'asd','23', 'asd');
+let decorator2 = task2_4_2('asd', 'asd', '23', 'asd');
 console.log(decorator2('string'));

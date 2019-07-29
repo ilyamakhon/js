@@ -7,11 +7,11 @@ function sum(a) {
         return f;
     }
 
-    f.toString = function() {
+    f.toString = function () {
         return currentSum;
     };
 
     return f;
 }
 
-console.log( parseInt(sum(1)(2)(3)(6)(2)(101000)) );
+console.log(parseInt(sum(1)(2)(3)(6)(2)(101000)));

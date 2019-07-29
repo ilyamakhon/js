@@ -9,7 +9,7 @@ function doTask2_3() {
 
     function sequence(start, step) {
         return function generator() {
-            return  start += step;
+            return start += step;
         }
     }
 

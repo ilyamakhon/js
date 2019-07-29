@@ -1,4 +1,5 @@
 import Building from '../model/building.js';
+
 export default function task1_2() {
     const el = document.getElementById('task1_2');
     el.addEventListener('click', () => {
@@ -45,7 +46,7 @@ function doTask1_2() {
 }
 
 function validate(building) {
-    if(isNaN(building.numberOfFloors) || building.numberOfFloors <= 0 || building.numberOfFloors > 25 ) {
+    if (isNaN(building.numberOfFloors) || building.numberOfFloors <= 0 || building.numberOfFloors > 25) {
         throw {
             errorCode: 1,
             errorMessage: `wrong number of floors : ${building.numberOfFloors} It must be in range (1-25)`,
@@ -53,7 +54,7 @@ function validate(building) {
         };
     }
 
-    if(isNaN(building.numberOfEntrances) || building.numberOfEntrances <= 0 || building.numberOfEntrances > 10 ) {
+    if (isNaN(building.numberOfEntrances) || building.numberOfEntrances <= 0 || building.numberOfEntrances > 10) {
         throw {
             errorCode: 2,
             errorMessage: `wrong number of entrances : ${building.numberOfEntrances} It must be in range (1-10)`,
@@ -61,7 +62,7 @@ function validate(building) {
         };
     }
 
-    if(isNaN(building.numberOfApartmentsOnFloor) || building.numberOfApartmentsOnFloor <= 0 || building.numberOfApartmentsOnFloor > 20 ) {
+    if (isNaN(building.numberOfApartmentsOnFloor) || building.numberOfApartmentsOnFloor <= 0 || building.numberOfApartmentsOnFloor > 20) {
         throw{
             errorCode: 3,
             errorMessage: `wrong number of apartments on landing : ${building.numberOfApartmentsOnFloor} It must be in range (1-20)`,
@@ -73,11 +74,10 @@ function validate(building) {
 function findApartment(apartmentNumber, building) {
     const numberOfApartmentsInEntrance = building.numberOfFloors * building.numberOfApartmentsOnFloor;
 
-    for(let entranceNumber = 1; entranceNumber <= building.numberOfEntrances; entranceNumber++) {
-        let maxApartmentNumberInEntrance = building.numberOfApartmentsOnFloor * building.numberOfFloors * entranceNumber;
+    for (let entranceNumber = 1; entranceNumber <= building.numberOfEntrances; entranceNumber++) {
+        const maxApartmentNumberInEntrance = building.numberOfApartmentsOnFloor * building.numberOfFloors * entranceNumber;
 
-        if(apartmentNumber <= maxApartmentNumberInEntrance) {
-
+        if (apartmentNumber <= maxApartmentNumberInEntrance) {
             for (let floorNumber = 1; floorNumber <= building.numberOfFloors; floorNumber++) {
                 let apartmentFloor = apartmentNumber;
 
