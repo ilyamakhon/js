@@ -6,18 +6,18 @@ export default class Building {
     }
 
     set setNumberOfFloors(numberOfFloors) {
-        this.numberOfFloors = numberOfFloors
+        this.numberOfFloors = numberOfFloors;
     }
 
     set setNumberOfEntrances(numberOfEntrances) {
-        this.numberOfEntrances = numberOfEntrances
+        this.numberOfEntrances = numberOfEntrances;
     }
 
     set setNumberOfApartmentsOnFloor(numberOfApartmentsOnFloor) {
-        this.numberOfApartmentsOnFloor = numberOfApartmentsOnFloor
+        this.numberOfApartmentsOnFloor = numberOfApartmentsOnFloor;
     }
 
     set setWholeAmountOfApartments(wholeAmountOfApartments) {
-        this.wholeAmountOfApartments = wholeAmountOfApartments
+        this.wholeAmountOfApartments = wholeAmountOfApartments;
     }
 }

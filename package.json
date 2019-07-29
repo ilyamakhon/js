@@ -1,0 +1,22 @@
+{
+  "name": "ht1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilyamakhon/js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ilyamakhon/js/issues"
+  },
+  "homepage": "https://github.com/ilyamakhon/js#readme",
+  "devDependencies": {
+    "eslint": "^6.1.0"
+  }
+}

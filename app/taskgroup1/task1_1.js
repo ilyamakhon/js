@@ -6,6 +6,7 @@ export default function task1_1() {
 }
 
 function doTask1_1() {
+    // eslint-disable-next-line no-constant-condition
     while (true) {
         const num1 = parseFloat(prompt('enter number 1'));
         const num2 = parseFloat(prompt('enter number 2'));
