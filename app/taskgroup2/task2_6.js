@@ -3,12 +3,9 @@ const sum = function (a, b) {
 };
 
 const bind = function (fn, context) {
-    // обрезаем ненужные аргументы (функцию и контекст)
     const bindArgs = [].slice.call(arguments, 2);
     return function () {
-        // здесь все аргументы будут необходимы
         const fnArgs = [].slice.call(arguments);
-        // собираем все
         return fn.apply(context, bindArgs.concat(fnArgs));
     };
 };
