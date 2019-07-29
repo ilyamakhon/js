@@ -1,4 +1,3 @@
-// eslint-disable-next-line camelcase
 export default function task3_1() {
     const el = document.getElementById('task3_1');
     el.addEventListener('click', () => {
