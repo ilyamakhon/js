@@ -15,12 +15,8 @@ function doTask1_1() {
                 alert('numbers are equal');
             }
 
-            if (num1 > num2) {
-                alert('first number is greater then second');
-            }
-
-            if (num1 < num2) {
-                alert('second number is greater then first');
+            if (isNumberGreater(num1, num2) || isNumberGreater(num2, num1)) {
+                break;
             }
         } else {
             break;
@@ -34,6 +30,17 @@ function isNumbers(num1, num2) {
         return 1;
     } else if(isNaN(num2)) {
         alert('second number is not numeric');
+        return 1;
+    }
+}
+
+function isNumberGreater(num1, num2) {
+    if (num1 > num2) {
+        alert('first number is greater then second');
+        return 1;
+    }
+    if (num1 < num2) {
+        alert('second number is greater then first');
         return 1;
     }
 }
