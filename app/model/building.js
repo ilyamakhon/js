@@ -1,4 +1,4 @@
-export default class building {
+export default class Building {
 
   constructor(numberOfFloors, numberOfEntrances, numberOfApartmentsOnFloor) {
     this.numberOfFloors = numberOfFloors;
