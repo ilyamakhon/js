@@ -1,23 +1,23 @@
 export default class Point {
 
 	constructor(firstCoordinate, secondCoordinate) {
-		this.firstCoordinate = firstCoordinate;
-		this.secondCoordinate = secondCoordinate;
+		this._firstCoordinate = firstCoordinate;
+		this._secondCoordinate = secondCoordinate;
 	}
 
-	get getFirstCoordinate() {
-		return this.firstCoordinate;
+	get firstCoordinate () {
+		return this._firstCoordinate;
 	}
 
-	get getSecondCoordinate() {
-		return this.secondCoordinate;
+	set firstCoordinate (value) {
+		this._firstCoordinate = value;
 	}
 
-	set setFirstCoordinate(firstCoordinate) {
-		this.firstCoordinate = firstCoordinate;
+	get secondCoordinate () {
+		return this._secondCoordinate;
 	}
 
-	set setSecondCoordinate(secondCoordinate) {
-		this.secondCoordinate = secondCoordinate;
+	set secondCoordinate (value) {
+		this._secondCoordinate = value;
 	}
 }
