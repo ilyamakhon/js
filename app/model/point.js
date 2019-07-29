@@ -6,11 +6,11 @@ export default class Point {
   }
 
   get getFirstCoordinate() {
-    return `${this.firstCoordinate}`;
+    return this.firstCoordinate;
   }
 
   get getSecondCoordinate() {
-    return `${this.secondCoordinate}`;
+    return this.secondCoordinate;
   }
 
   set setFirstCoordinate(firstCoordinate) {
