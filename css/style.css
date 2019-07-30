@@ -1,0 +1,73 @@
+
+h1 {
+    font-size: 48px;
+}
+
+.tasks-container {
+    padding: 32px;
+}
+.tasks-group {
+    margin-bottom: 32px;
+}
+
+.tasks-btn {
+    border-radius: 4px;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 32px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btn-red {
+    background-color: red;
+}
+
+.btn-green {
+    background-color: green;
+}
+
+.btn-blue {
+    background-color: blue;
+}
+
+.btn-crimson {
+    background-color: crimson;
+}
+
+.btn-gray {
+    background-color: dimgrey;
+}
+
+.btn-pink {
+    background-color: deeppink;
+}
+
+.tasks-btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.tasks-btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.tasks-btn:hover span {
+    padding-right: 25px;
+}
+
+.tasks-btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
